@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Utilities Demo</title>
+	</head>
+	<body>
+		<script type="text/javascript" src="jsutils.js"></script>
+		<script type="text/javascript">		
+			window.onload = function() 
+			{
+				var html = "<h1>%@</h1><p>Current Date is %@ in %@</p>".format(
+					["Hello World", 
+					new Date, 
+					"Saint vincent and the grenadines"]);
+					  
+				var main = document.getElementById("main"); 
+				main.innerHTML = html; 
+			}
+		</script>
+	
+		<div id="main">
+			
+		</div>
+	</body>
+	
+</html>
